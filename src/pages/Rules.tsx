@@ -160,7 +160,7 @@ export default () => {
       </div>
 
       <input
-        class="input input-bordered input-primary"
+        class="input input-sm input-bordered input-primary"
         placeholder={t('search')}
         value={globalFilter()}
         onInput={(e) => setGlobalFilter(e.currentTarget.value)}

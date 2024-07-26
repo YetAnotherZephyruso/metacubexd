@@ -386,7 +386,7 @@ export default () => {
           </div>
 
           <select
-            class="select select-bordered select-primary select-sm w-full max-w-full flex-1 sm:select-md"
+            class="select select-bordered select-primary select-sm w-full max-w-full flex-1"
             onChange={(e) => setSourceIPFilter(e.target.value)}
           >
             <option value="">{t('all')}</option>
@@ -410,19 +410,19 @@ export default () => {
         <div class="join flex flex-1 items-center md:flex-1">
           <input
             type="search"
-            class="input input-sm join-item input-primary min-w-0 flex-1 sm:input-md"
+            class="input input-sm join-item input-primary min-w-0 flex-1"
             placeholder={t('search')}
             onInput={(e) => setGlobalFilter(e.target.value)}
           />
 
           <Button
-            class="join-item btn-sm sm:btn-md"
+            class="btn btn-primary join-item btn-sm"
             onClick={() => setPaused((paused) => !paused)}
             icon={paused() ? <IconPlayerPlay /> : <IconPlayerPause />}
           />
 
           <Button
-            class="join-item btn-sm sm:btn-md"
+            class="btn btn-primary join-item btn-sm"
             onClick={() => {
               if (table.getState().globalFilter) {
                 table
@@ -438,7 +438,7 @@ export default () => {
           />
 
           <Button
-            class="btn join-item btn-sm sm:btn-md"
+            class="btn btn-primary join-item btn-sm"
             onClick={() => connectionsSettingsModalRef?.showModal()}
             icon={<IconSettings />}
           />
